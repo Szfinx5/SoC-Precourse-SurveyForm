@@ -2,11 +2,64 @@
 
 <html>
   <head>
-    <title>My awesome tribute page mofos</title>
+    <title>Survey Form Challenge</title>
     <!-- The line below links your html document to your css stylesheet -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Copy and paste your HTML from CodePen into here -->
+    
+<main id="main">
+
+  <header>
+    <h1 id="title">Contact form</h1>
+    <p id="description">Thank you for your enquire</p>
+  </header>
+    
+  <form id="survey-form">
+    <label id="name-label" for "name"> Name: </label>
+    <input id="name" type="text" name="name" placeholder="Please enter your name" required></input>
+    <label id="email-label" for "email">Email: </label>
+    <input id="email" type="email" name="email" placeholder="example@domain.com" required></input>
+    <label id="number-label" for "number">Phone number: </label>
+    <input id="number" type="number" name="number" placeholder="013325478596" required min="01000000000" max="99999999999"></input>
+    <label id="dropdown-label" for "dropdown">Type of the enquire: </label>
+    
+    <select id="dropdown">
+      <option value="General">General</option>
+      <option value="Sales">Sales</option>
+      <option value="Technical">Technical</option>
+    </select>
+    
+    <fieldset id="industry-radio">
+      <legend for "industry" id="industry">Which industry do you work in?</legend>
+      <input id="IT" type="radio" name="industry" value="IT"></input>
+      <label for="industry">IT</label>
+      <br>
+      <input id="Finance" type="radio" name="industry" value="Finance"></input>
+      <label for="industry">Finance</label>
+      <br>
+      <input id="Manufacturing" type="radio" name="industry"  value="Manufacturing"></input>
+      <label for="industry">Manufacturing</label> 
+    </fieldset>
+    
+  <fieldset id="contact-checkbox">  
+      <legend for="contact_mode">How would you like to be contacted?</legend>
+      <input id="mode_email" type="checkbox" name="contact_mode" value="email">
+      <label for "mode_email">Email</label><br>
+      <input id="mode_phone" type="checkbox" name="contact_mode" value="phone">
+      <label for "mode_phone">Phone</label><br>
+      <input id="mode_social_media" type="checkbox" name="contact_mode" value="social_media">
+      <label for "mode_social_media">Social media</label><br>
+    </fieldset>
+    
+    <label id="comment-label">Please type your enquire here</label>
+    <textarea id="comment" name="comment" rows="5" cols="50">Enter your enquire here...</textarea>
+    
+    <button id="submit" type="submit"> Send message</button>
+  
+  </form>
+  
+  </main>
+  
   </body>
 </html>

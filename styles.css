@@ -1,1 +1,61 @@
 /* Copy and paste your CSS from CodePen into here */
+#main{
+    background:lightgray;
+    max-width:450px;
+    font-size: 18px;
+    padding: 5px 30px 30px 30px;
+    margin: 0 auto;
+    border-radius:5px;
+    position:relative;
+    box-shadow:0px 1px 10px 5px
+  }
+  
+  header{
+    text-align: center;
+    margin:0px auto 40px auto;
+    position: relative;
+  }
+  
+  #survey-form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #name, #email, #number, #dropdown{
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 0px 3px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  #name-label, #email-label, #number-label, #dropdown-label, #comment-label{
+    margin-bottom: 5px;
+  }
+  
+  #comment{
+    width: 100%;
+    min-height: 90px;
+    padding: 0px 3px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;}
+  
+  #IT, #Finance, #Manufacturing, #mode_email, #mode_phone, #mode_social_media{
+   margin-right:10px;
+   margin-bottom:10px;
+  }
+  
+  #contact-checkbox, #industry-radio{
+    margin-bottom: 20px;
+  }
+  
+  #submit{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size: 16px;
+  }
